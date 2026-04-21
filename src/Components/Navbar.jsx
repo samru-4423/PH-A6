@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 border-b-2 border-base-300 ">
-            <div className="navbar bg-base-100 w-[80%] mx-auto">
+            <div className="navbar bg-base-100 md:w-[80%] mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,6 +17,7 @@ const Navbar = () => {
                             <li><a>Pricing</a></li>
                             <li><a>Testimonials</a></li>
                             <li><a>FAQ</a></li>
+                            <li><button>Cart</button></li>
                         </ul>
                     </div>
                     <h2 className='font-bold text-3xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
@@ -31,8 +32,8 @@ const Navbar = () => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end gap-3">
-                    <button className="btn border-none bg-transparent"><img src='./public/shopping-cart.png'></img></button>
+                <div className="navbar-end md:gap-3 ">
+                    <ul className="menu menu-horizontal px-1 hidden md:flex"><button className="btn border-none bg-transparent"><img src='./public/shopping-cart.png'></img></button></ul>
                     <button className="btn border-none bg-transparent">Login</button>
                     <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Satrted</button>
                 </div>

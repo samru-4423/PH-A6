@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ card }) => {
     return (
-        <div className='w-full  p-3 border-2 border-base-300 rounded-2xl'>
+        <div className='w-full  p-3 border-2 border-base-300 rounded-2xl hover:-translate-y-2 transition duration-300'>
             <div className='flex justify-end'>
                 <p className='text-center bg-amber-200 text-orange-400  px-3 rounded-full w-auto'>{card.tag}</p>
             </div>
@@ -29,8 +29,8 @@ const Card = ({ card }) => {
             </div>
 
             <div className="mt-6">
-      <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Buy Now</button>
-    </div>
+                <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Buy Now</button>
+            </div>
 
         </div>
     );

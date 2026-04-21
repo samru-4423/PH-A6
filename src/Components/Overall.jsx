@@ -3,12 +3,12 @@ import React from 'react';
 const Overall = () => {
     return (
         <div className='bg-gradient-to-r from-[#4F39F6]  to-[#9514FA] my-5'>
-            <div className='grid grid-cols-3 items-center text-center justify-between text-white w-[85%] mx-auto p-12'>
-                <div className='border-r border-gray-400'>
+            <div className='grid md:grid-cols-3 grid-cols-1 items-center text-center justify-between text-white md:w-[85%] mx-auto p-12'>
+                <div className='md:border-r border-b border-gray-400'>
                     <h2 className='font-bold text-5xl'>50K+</h2>
                     <p className='text-[20px] font-light'>Active Users</p>
                 </div>
-                <div className='border-r border-gray-400'>
+                <div className='md:border-r border-b border-gray-400  '>
                     <h2 className='font-bold text-5xl'>200+</h2>
                     <p className='text-[20px] font-light'>Premium Tools</p>
                 </div>

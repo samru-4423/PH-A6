@@ -3,9 +3,9 @@ import React from 'react';
 const Banner = () => {
     return (
         <div className="hero py-5">
-            <div className="hero-content grid grid-cols-2 w-[80%] mx-auto p-6">
+            <div className="hero-content grid md:grid-cols-2 grid-cols-1 md:w-[80%] mx-auto ">
                 <div>
-                    <div className='flex items-center gap-1 bg-base-300 w-[49%] py-1 px-2 rounded-full'>
+                    <div className='flex items-center gap-1 bg-base-300 md:w-[49%] w-[77%] py-1 px-2 rounded-full'>
                         <img src="./../public/navbarDot.png
                     " alt="" className='w-5 h-5 rounded-full' />
                         <h4 className=' bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>New: AI-Powered Tools Availbale</h4>
@@ -16,15 +16,15 @@ const Banner = () => {
                         software—all in one place. Start creating faster today. <br />
                         Explore Products
                     </p>
-                    <div className='space-x-2'>
+                    <div className='space-x-2 px-5 md:px-0'>
                         <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Explore Products</button>
                         <button className="btn border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-4 py-2 rounded-full"><img src="./public/Play.png" alt="" /> Watch Demo</button>
                     </div>
                 </div>
-                <div className='flex justify-end'>
+                <div className='flex md:justify-end'>
                     <img
                         src="./public/banner.png"
-                        className="w-[75%] rounded-lg"
+                        className="md:w-[75%] w-full rounded-lg"
                     />
                 </div>
             </div>

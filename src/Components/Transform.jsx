@@ -2,10 +2,10 @@ import React from 'react';
 
 const Transform = () => {
     return (
-        <div className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white p-20'>
-            <div className='w-[80%] mx-auto text-center'>
-                <h2 className='text-[42px] font-bold'>Ready To Transform Your Workflow?</h2>
-                <p className='text-[16px] font-extralight py-5'>Join thousands of preofessionals who are already ising Digitools to work smarter. <br />
+        <div className='bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white md:p-20 py-10'>
+            <div className='md:w-[80%] mx-auto text-center'>
+                <h2 className='md:text-[42px] text-[40px] font-bold'>Ready To Transform Your Workflow?</h2>
+                <p className='text-[16px] font-extralight py-5 md:px-60'>Join thousands of preofessionals who are already using Digitools to work smarter. 
                     Start your free trial today.</p>
                 
                 <div className='space-x-2'>
