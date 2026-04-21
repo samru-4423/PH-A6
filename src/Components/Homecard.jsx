@@ -5,7 +5,7 @@ const Homecard = ({ cardPromise }) => {
     const cardContent = use(cardPromise);
     console.log(cardContent);
     return (
-        <div className=' w-[80%] mx-auto '>
+        <div className=' w-[80%] mx-auto pb-20'>
             <div className='text-center py-15'>
                 <h2 className='text-5xl font-bold'>Premium Digital Tools</h2>
                 <p className='text-[16px] text-gray-400 py-5'>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity. </p>

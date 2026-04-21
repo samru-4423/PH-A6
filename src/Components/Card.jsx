@@ -29,7 +29,7 @@ const Card = ({ card }) => {
             </div>
 
             <div className="mt-6">
-      <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Subscribe</button>
+      <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Buy Now</button>
     </div>
 
         </div>

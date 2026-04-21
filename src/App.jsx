@@ -5,6 +5,8 @@ import Banner from './Components/Banner'
 import Homecard from './Components/Homecard'
 import Navbar from './Components/Navbar'
 import Overall from './Components/Overall'
+import StepsPart from './Components/StepsPart'
+import PackagePlan from './Components/PackagePlan'
 
 const cardPromise = fetch('Data.json')
   .then(res => res.json())
@@ -19,7 +21,8 @@ function App() {
       <Suspense fallback={<h3>Loading...</h3>}>
         <Homecard cardPromise={cardPromise}></Homecard>
       </Suspense>
-
+      <StepsPart></StepsPart>
+      <PackagePlan></PackagePlan>
 
     </>
   )
