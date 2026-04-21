@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar'
 import Overall from './Components/Overall'
 import StepsPart from './Components/StepsPart'
 import PackagePlan from './Components/PackagePlan'
+import Transform from './Components/Transform'
+import Footer from './Components/Footer'
 
 const cardPromise = fetch('Data.json')
   .then(res => res.json())
@@ -23,7 +25,8 @@ function App() {
       </Suspense>
       <StepsPart></StepsPart>
       <PackagePlan></PackagePlan>
-
+      <Transform></Transform>
+      <Footer></Footer>
     </>
   )
 }
