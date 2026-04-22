@@ -10,7 +10,7 @@ import PackagePlan from './Components/PackagePlan'
 import Transform from './Components/Transform'
 import Footer from './Components/Footer'
 import Cart from './Components/Cart'
-import { ToastContainer } from 'react-toastify'
+import { toast, ToastContainer } from 'react-toastify'
 
 const cardPromise = fetch('Data.json')
   .then(res => res.json())
@@ -27,6 +27,7 @@ function App() {
   // remove from cart
   const handleRemove = (id) => {
     setCartItems(prev => prev.filter(item => item.id !== id));
+    toast.error("Item removed successfully");
   };
 
   const handleClearCart = () => {
@@ -37,7 +38,7 @@ function App() {
   return (
 
     <>
-      <Navbar></Navbar>
+      <Navbar cartItems={cartItems} setActiveTab={setActiveTab}></Navbar>
       <Banner></Banner>
       <Overall></Overall>
       <div className=' md:w-[80%] mx-auto'>
