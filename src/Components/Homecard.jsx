@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import Card from './Card';
 
-const Homecard = ({ cardPromise }) => {
+const Homecard = ({ cardPromise, handleAddToCart, cartItems }) => {
     const cardContent = use(cardPromise);
     //console.log(cardContent);
     return (
@@ -17,7 +17,7 @@ const Homecard = ({ cardPromise }) => {
 
             <div className='grid md:grid-cols-3 grid-cols-1 gap-4 pl-3'>
                 {
-                    cardContent.map(card => <Card key={card.id} card={card}></Card>)
+                    cardContent.map(card => <Card key={card.id} card={card} handleAddToCart={handleAddToCart} cartItems={cartItems}></Card>)
                 }
             </div>
 

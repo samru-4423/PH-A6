@@ -10,12 +10,30 @@ import PackagePlan from './Components/PackagePlan'
 import Transform from './Components/Transform'
 import Footer from './Components/Footer'
 import Cart from './Components/Cart'
+import { ToastContainer } from 'react-toastify'
 
 const cardPromise = fetch('Data.json')
   .then(res => res.json())
 
 function App() {
   const [activeTab, setActiveTab] = useState("products");
+  const [cartItems, setCartItems] = useState([]);
+
+  // add to cart
+  const handleAddToCart = (card) => {
+    setCartItems(prev => [...prev, card]);
+  };
+
+  // remove from cart
+  const handleRemove = (id) => {
+    setCartItems(prev => prev.filter(item => item.id !== id));
+  };
+
+  const handleClearCart = () => {
+    setCartItems([]);
+    toast.success("Checkout complete");
+  };
+
   return (
 
     <>
@@ -47,7 +65,7 @@ function App() {
                 : "bg-transparent border-none text-black"
                 }`}
             >
-              Cart (0)
+              Cart ({cartItems.length})
             </button>
 
           </div>
@@ -67,16 +85,18 @@ function App() {
 
       {activeTab === "products" && (
         <Suspense fallback={<h3 className='text-center'>Loading...</h3>}>
-          <Homecard cardPromise={cardPromise}></Homecard>
+          <Homecard cardPromise={cardPromise} handleAddToCart={handleAddToCart} cartItems={cartItems}></Homecard>
         </Suspense>
       )}
 
-      {activeTab === "cart" && <Cart/>}
+      {activeTab === "cart" && <Cart cartItems={cartItems} handleRemove={handleRemove} handleClearCart={handleClearCart} />}
 
       <StepsPart></StepsPart>
       <PackagePlan></PackagePlan>
       <Transform></Transform>
       <Footer></Footer>
+
+      <ToastContainer />
     </>
   )
 }

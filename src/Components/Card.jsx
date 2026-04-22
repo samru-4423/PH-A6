@@ -1,12 +1,32 @@
 import React from 'react';
 import CardFeature from './CardFeature';
+import { toast } from 'react-toastify';
 
-const Card = ({ card }) => {
+const Card = ({ card, handleAddToCart, cartItems }) => {
     const isTagType = card.tagType;
     // console.log(isTagType);
 
     const isFeatures = card.features;
     //console.log(isFeatures);
+
+    const addNotify = () => toast("Added to the cart");
+
+    const isAdded = cartItems?.some(item => String(item.id) == String(card.id));
+
+    console.log("card.id:", card.id);
+    console.log("cartItems:", cartItems);
+
+
+    const handleClick = () => {
+        if (isAdded) {
+            toast.error("Item already in cart");
+            return;
+        }
+
+        handleAddToCart(card);
+        toast("Added to the cart");
+        //console.log("is added", isAdded);
+    };
 
     const tagStyles =
         isTagType === "best-seller"
@@ -30,19 +50,6 @@ const Card = ({ card }) => {
 
             <h2 className='font-bold text-xl'>${card.price}<span className='font-light text-[16px] text-gray-400'>/{card.period}</span> </h2>
 
-            {/* <div className='flex items-center gap-2'>
-                <img src="./../public/check.png" alt="" className='w-4 h-4' />
-                <p className='text-gray-400 py-2'>{card.features[0]}</p>
-            </div>
-            <div className='flex items-center gap-2'>
-                <img src="./../public/check.png" alt="" className='w-4 h-4' />
-                <p className='text-gray-400 py-2'>{card.features[1]}</p>
-            </div>
-            <div className='flex items-center gap-2'>
-                <img src="./../public/check.png" alt="" className='w-4 h-4' />
-                <p className='text-gray-400 py-2'>{card.features[2]}</p>
-            </div> */}
-
             <div className='flex-1'>
                 {
                     isFeatures.map((feature, index) => <CardFeature key={index} feature={feature}></CardFeature>)
@@ -50,7 +57,16 @@ const Card = ({ card }) => {
             </div>
 
             <div className="mt-6">
-                <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Buy Now</button>
+                {/* <button onClick={() => { handleAddToCart(card); addNotify(); }} className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Buy Now</button> */}
+                <button
+                    onClick={handleClick}
+                    className={`btn rounded-full btn-block text-white ${isAdded
+                        ? "bg-green-500"
+                        : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA]"
+                        }`}
+                >
+                    {isAdded ? "Added to cart" : "Buy Now"}
+                </button>
             </div>
 
         </div>
