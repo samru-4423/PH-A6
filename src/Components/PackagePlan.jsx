@@ -13,19 +13,19 @@ const PackagePlan = () => {
                     <p className='text-[16px] text-gray-400 py-2'>Perfect for getting started</p>
                     <h2 className='text-4xl font-bold py-4'>$0<span className='text-[18px] text-gray-400 font-normal'>/Month</span></h2>
                     <div className='flex items-center gap-2 pt-4'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Access to 10 free tools</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Basic templates</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Community support</p>
                     </div>
                     <div className='flex items-center gap-2 pb-17'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>1 project per month</p>
                     </div>
                     <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Get Started Free</button>
@@ -36,27 +36,27 @@ const PackagePlan = () => {
                     <p className='text-[16px] font-light py-2'>Best for professionals</p>
                     <h2 className='text-4xl font-bold py-4'>$29<span className='text-[18px]  font-normal'>/Month</span></h2>
                     <div className='flex items-center gap-2 pt-4'>
-                        <img src="./../public/check2.png" alt="" className='w-4 h-4' />
+                        <img src="/check2.png" alt="" className='w-4 h-4' />
                         <p>Access to all premium tools</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check2.png" alt="" className='w-4 h-4' />
+                        <img src="/check2.png" alt="" className='w-4 h-4' />
                         <p>Unlimited templates</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check2.png" alt="" className='w-4 h-4' />
+                        <img src="/check2.png" alt="" className='w-4 h-4' />
                         <p>Priority support</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check2.png" alt="" className='w-4 h-4' />
+                        <img src="/check2.png" alt="" className='w-4 h-4' />
                         <p>Unlimited projects</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check2.png" alt="" className='w-4 h-4' />
+                        <img src="/check2.png" alt="" className='w-4 h-4' />
                         <p>Cloud sync</p>
                     </div>
                     <div className='flex items-center gap-2 pb-5'>
-                        <img src="./../public/check2.png" alt="" className='w-4 h-4' />
+                        <img src="/check2.png" alt="" className='w-4 h-4' />
                         <p>Advanced analytics</p>
                     </div>
                     <button className="btn bg-white text-purple-600 rounded-full btn-block">Start Pro Trial</button>
@@ -66,27 +66,27 @@ const PackagePlan = () => {
                     <p className='text-[16px] text-gray-400 py-2'>For teams and businesses</p>
                     <h2 className='text-4xl font-bold py-4'>$99<span className='text-[18px] text-gray-400 font-normal'>/Month</span></h2>
                     <div className='flex items-center gap-2 pt-4'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Everything in Pro</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Team collaboration</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Custom integrations</p>
                     </div>
                     <div className='flex items-center gap-2 '>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Dedicated support</p>
                     </div>
                     <div className='flex items-center gap-2 '>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>SLA guarantee</p>
                     </div>
                     <div className='flex items-center gap-2 pb-5'>
-                        <img src="./../public/check.png" alt="" className='w-4 h-4' />
+                        <img src="/check.png" alt="" className='w-4 h-4' />
                         <p className='text-gray-400'>Custom branding</p>
                     </div>
                     <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full btn-block">Contact Sales</button>

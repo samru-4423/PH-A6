@@ -12,9 +12,8 @@ const StepsPart = () => {
                     <div className='absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full'>
                         <p>01</p>
                     </div>
-                    {/* <img src="./../public/user.png" alt="" className='block mx-auto bg-purple-200 p-3 rounded-full' /> */}
                     <div className='bg-purple-200 w-[20%] mx-auto p-3 mt-15 rounded-full'>
-                        <img src="./../public/user.png" alt="" />
+                        <img src="/user.png" alt="" />
                     </div>
                     <h2 className='text-2xl font-bold py-3'>Create Account</h2>
                     <p className='text-[16px] text-gray-400 pb-15'>Sign up for free in seconds. No credit card required to get started.</p>
@@ -23,9 +22,8 @@ const StepsPart = () => {
                     <div className='absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full'>
                         <p>02</p>
                     </div>
-                    {/* <img src="./../public/package.png" alt="" className='block mx-auto bg-purple-200 p-3 rounded-full' /> */}
                     <div className='bg-purple-200 w-[20%] mx-auto p-3 mt-15 rounded-full'>
-                        <img src="./../public/package.png" alt="" />
+                        <img src="/package.png" alt="" />
                     </div>
                     <h2 className='text-2xl font-bold py-3'>Choose Products</h2>
                     <p className='text-[16px] text-gray-400 pb-15'>Browse our catalog and select the tools that fit your needs.</p>
@@ -35,7 +33,7 @@ const StepsPart = () => {
                         <p>03</p>
                     </div>
                     <div className='bg-purple-200 w-[20%] mx-auto p-3 mt-15 rounded-full'>
-                        <img src="./../public/rocket.png" alt="" />
+                        <img src="/rocket.png" alt="" />
                     </div>
                     <h2 className='text-2xl font-bold py-3'>Start Creating</h2>
                     <p className='text-[16px] text-gray-400 pb-15'>Download and start using your premium tools immediately.</p>

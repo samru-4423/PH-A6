@@ -46,13 +46,13 @@ const Footer = () => {
                     <h2 className='text-2xl'>Social Links</h2>
                     <div className='flex gap-3 py-3'>
                         <div className='bg-white w-[15%] p-1 rounded-full'>
-                            <img src="./../public/instagram.png" alt="" className='w-10' />
+                            <img src="/instagram.png" alt="" className='w-10' />
                         </div>
                         <div className='bg-white w-[15%] p-1 rounded-full'>
-                            <img src="./../public/facebook.png" alt="" className='w-10' />
+                            <img src="/facebook.png" alt="" className='w-10' />
                         </div>
                         <div className='bg-white w-[15%] p-1 rounded-full'>
-                            <img src="./../public/x.png" alt="" className='w-10' />
+                            <img src="/x.png" alt="" className='w-10' />
                         </div>
                     </div>
                 </div>

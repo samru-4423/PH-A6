@@ -14,7 +14,7 @@ const Cart = ({ cartItems, handleRemove, handleClearCart }) => {
                 //     <CartDetails></CartDetails>
                 // </Suspense>
                 cartItems.length === 0
-                    ? <p className=' py-4 text-center'><img src="./../public/shopping.png" alt="" className='w-25 mx-auto'/>Your cart is empty</p>
+                    ? <p className=' py-4 text-center'><img src="/shopping.png" alt="" className='w-25 mx-auto'/>Your cart is empty</p>
                     : cartItems.map(item => (
                         <CartDetails
                             key={item.id}

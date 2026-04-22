@@ -45,9 +45,7 @@ function App() {
         <div className='text-center py-15'>
           <h2 className='text-5xl font-bold'>Premium Digital Tools</h2>
           <p className='text-[16px] text-gray-400 py-5 px-2 md:px-82'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity. </p>
-          <div className='border-2 border-gray-200 md:w-[12%] w-[45%] mx-auto space-x-1 rounded-full'>
-            {/* <button className='btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full'>Products</button> */}
-            {/* <button className='btn bg-transparent border-none rounded-full'>Cart (0)</button> */}
+          <div className='border-2 border-gray-200 md:w-[13%] w-[48%] mx-auto space-x-1 rounded-full'>
 
             <button
               onClick={() => setActiveTab("products")}

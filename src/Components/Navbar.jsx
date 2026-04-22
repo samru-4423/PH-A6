@@ -33,7 +33,7 @@ const Navbar = ({ cartItems, setActiveTab }) => {
                     </ul>
                 </div>
                 <div className="navbar-end md:gap-3 ">
-                    <ul className="menu menu-horizontal px-1 hidden md:flex"><button onClick={() => setActiveTab("cart")} className="btn border-none bg-transparent"><img src='./public/shopping-cart.png'></img></button><span className='text-[12px] text-center bg-red-500 w-4.5 h-4.5 px-1 -ml-6 rounded-full'>{cartItems.length}</span></ul>
+                    <ul className="menu menu-horizontal px-1 hidden md:flex"><button onClick={() => setActiveTab("cart")} className="btn border-none bg-transparent"><img src='/shopping-cart.png'></img></button><span className='text-[12px] text-center bg-red-500 w-4.5 h-4.5 px-1 -ml-6 rounded-full'>{cartItems.length}</span></ul>
                     <button className="btn border-none bg-transparent">Login</button>
                     <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Satrted</button>
                 </div>
