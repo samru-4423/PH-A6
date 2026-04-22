@@ -17,7 +17,7 @@ const Navbar = () => {
                             <li><a>Pricing</a></li>
                             <li><a>Testimonials</a></li>
                             <li><a>FAQ</a></li>
-                            <li><button>Cart</button></li>
+                            <li><button>Cart <span className='text-[12px] text-center bg-red-500 w-4.5 h-4.5 px-1 rounded-full'>0</span></button></li>
                         </ul>
                     </div>
                     <h2 className='font-bold text-3xl bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end md:gap-3 ">
-                    <ul className="menu menu-horizontal px-1 hidden md:flex"><button className="btn border-none bg-transparent"><img src='./public/shopping-cart.png'></img></button></ul>
+                    <ul className="menu menu-horizontal px-1 hidden md:flex"><button className="btn border-none bg-transparent"><img src='./public/shopping-cart.png'></img></button><span className='text-[12px] text-center bg-red-500 w-4.5 h-4.5 px-1 -ml-6 rounded-full'>0</span></ul>
                     <button className="btn border-none bg-transparent">Login</button>
                     <button className="btn bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Satrted</button>
                 </div>
