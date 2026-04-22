@@ -23,7 +23,7 @@ const Banner = () => {
                 </div>
                 <div className='flex md:justify-end'>
                     <img
-                        src="./public/banner.png"
+                        src="/banner.png"
                         className="md:w-[75%] w-full rounded-lg"
                     />
                 </div>
